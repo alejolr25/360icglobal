@@ -96,16 +96,8 @@ header{
     padding: 25px;    
   }
 
-.image-about{
-    background: url(../img/diana360icglobal.jpg);
-    margin: auto;
-    width: 50%;
-    padding: 25px;
-    text-align: center;
-    
-}
 .about{
-  background: var(--fondo);
+  background: url(../img/fondo_about.jpg);
 }
 
   /* FOOTER */
