@@ -1,0 +1,216 @@
+:root{
+    --color1: rgb(219,144,.5);
+    --color2: rgba(23, 180, 83, 0.877);
+    --color3: rgba(11,194,211, 0.623);
+    --fondo: #f2f2f2;
+    --espacios: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'open sans';
+    background: var(--fondo);
+  }
+
+img{
+    vertical-align: top;
+}
+
+/* Header */
+
+header{
+    width: 100%;
+    height:600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  nav{
+    width: 100%;
+    position: fixed;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.5)
+  }
+  
+  .nav1{
+    background: transparent;
+    height: 80px;
+    color:#fff;
+  }
+
+
+  .contenedor-nav{
+    display: flex;
+    margin: auto;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    max-width:1000px;
+    height:inherit;
+    overflow: hidden;
+  }
+  
+  nav .enlaces a{
+    display: inline-block;
+    padding: 5px 0;
+    margin-right: 17px;
+    font-size: 17px;
+    font-weight: 300;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+    color: inherit;
+  }
+  
+  nav .enlaces a:hover{
+    border-bottom: 3px solid #1498a4;
+    transition: 0.6s;
+  }
+  
+  .logo, .logo img{ 
+    height:80px;
+    text-align: center;
+  }
+  
+  .icono{
+    display:none;
+    font-size: 24px;
+    padding: 23.5px 20px;
+  }
+  
+  /* SECTION ABOUT */
+
+  .title-about{
+    text-align: center;
+    padding: 20px;
+  }
+
+  .text-about{
+    text-align: justify;
+    vertical-align: middle;
+    width: 50%;
+    padding: 25px;    
+  }
+
+.image-about{
+    background: url(../img/diana360icglobal.jpg);
+    margin: auto;
+    width: 50%;
+    padding: 25px;
+    text-align: end;
+    overflow: hidden;
+}
+.about{
+  background: var(--fondo);
+}
+
+  /* FOOTER */
+
+  .fa-fa-facebook{
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+  }
+  .textos{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(231, 31, 141);
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .textos>h1{font-size:80px;;}
+  
+  .textos>h2{font-size: 30px; font-weight: 300;}
+
+  .textox>h4{
+    text-align: center;
+  }
+  .textos-footer{
+
+    width: 100%;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    overflow: hidden;
+    text-align: center;
+    font-family: 'Roboto';
+    font-weight: 100;
+    font-size: large;
+  }
+  .parallax {
+    /* The image used */
+    background-image: 
+    
+    linear-gradient(
+  rgba(0, 0, 0, 0.5),
+  rgba(0, 0, 0, 0.5)
+),
+url();
+
+    /* Set a specific height */
+    height: 300px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .footer-logo{
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer-logo img{
+    width: 80%;
+  }
+
+  .work-contenedor {
+    background-color: chocolate;
+  }
+
+  .clients{
+    background-color: crimson;
+  }
+
+
+
+  @media screen and (max-width: 700px){
+
+    .nav2{
+      color: #fff;
+    }
+  
+    .icono{
+      display:block;
+      cursor: pointer;
+    }
+  
+    .enlaces{
+      position: fixed;
+      top:80px;
+      background: #2c3e50;
+      left: 0;
+      height: 100%;
+      transition: 1s;
+      width: 0;
+      overflow: hidden;
+    }
+  
+  }
