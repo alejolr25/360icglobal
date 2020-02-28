@@ -86,18 +86,24 @@ header{
 
   .title-about{
     text-align: center;
-    padding: 20px;
+    padding: 40px;
   }
 
   .text-about{
     text-align: justify;
     vertical-align: middle;
-    width: 50%;
-    padding: 25px;    
+    width:70%;
+    padding: 20px;   
+    font-family: 'Roboto'; 
   }
 
 .about{
-  background: url(../img/fondo_about.jpg);
+  background: url(/img/fondo_about1.jpg);
+  background-size: cover;
+}
+
+.btn{
+align-items: right;
 }
 
   /* FOOTER */
