@@ -118,14 +118,13 @@ header{
   }
 
   .text-about{
-    text-align: justify;
+    text-align: justify, center;
     vertical-align: middle;
-    width:70%;
+    width:100%;
     padding: 20px;   
     font-family: 'Ubuntu'; 
     font-size: 20px;
     
-
   }
 
   .btn-section-about{
