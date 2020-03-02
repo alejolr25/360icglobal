@@ -50,14 +50,19 @@ header{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    color: rgb(231, 31, 141);
+    color: white;
     overflow: hidden;
     text-align: center;
   }
   
-  .textos>h1{font-size:80px;;}
+  .textos>h1{
+    font-size:80px;
+    font: 'Montserrat';
+    letter-spacing: 0;
+    
+  }
   
-  .textos>h2{font-size: 30px; font-weight: 300;}
+  .textos>h2{font-size: 40px; font-weight: 300;}
 
   .textox>h4{
     text-align: center;
