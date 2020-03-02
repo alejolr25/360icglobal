@@ -111,6 +111,10 @@ header{
   .title-about{
     text-align: center;
     padding: 40px;
+    font-size: 40px;
+    font-famil;
+    font-style: 'Light italic';
+    font-weight: bolder;
   }
 
   .text-about{
@@ -118,7 +122,14 @@ header{
     vertical-align: middle;
     width:70%;
     padding: 20px;   
-    font-family: 'Roboto'; 
+    font-family: 'Ubuntu'; 
+    font-size: 20px;
+    
+
+  }
+
+  .btn-section-about{
+    position:relative;
   }
 
 .about{
