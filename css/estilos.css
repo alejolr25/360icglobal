@@ -122,6 +122,85 @@ header{
   background-size: cover;
 }
 
+/* CLIENTS SECTION */
+
+.section-padding{
+  padding: 50px 0;
+  background-color: aliceblue;
+}
+
+.section-headind h2{ 
+  font-family: 'Roboto';
+}
+
+.team-info{
+  margin-top: 50px;
+}
+
+.team-info h3{
+  margin-bottom: 20px;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+.team-info h6{
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.team-info p{
+  margin:40px;  
+  color: #999;
+  font: Courgette;
+  font-size: 18px;
+}
+
+.team-div{
+  width: 45px;
+  background: #000;
+  height: 2px;
+  position: relative;
+  margin-top: 20px;
+}
+
+.team-div:after{
+  position: absolute;
+  content: '';
+  width: 30px;
+  background: #000;
+  height: 2px;
+  bottom: 0;
+  top: 5px;
+}
+
+.carousel-indicators{
+  border-color: 20px;
+  left: 53%;
+}
+.carousel-indicators li{
+  border-color: black;
+}
+
+.carousel-indicators.active{
+  background: #FF1493;
+  border-color: fuchsia;
+
+}
+
+.list-inline li{
+  width: 30px;
+  height: 30px;
+  background: #262626;
+  border-radius: 50px;
+}
+
+.list-inline li a i{
+  color: #fff;
+  padding: 7px 3;
+}
+
+/* END CLIENTS SECTION */
+
   /* FOOTER */
 
   .fa-fa-facebook{
@@ -178,6 +257,9 @@ url();
 
   @media screen and (max-width: 700px){
 
+
+    /* HEADER SECTION */
+
     .nav2{
       color: #fff;
     }
@@ -197,5 +279,13 @@ url();
       width: 0;
       overflow: hidden;
     }
+
+    /* END HEADER SECTION */
+
+    /* CASOS DE EXITO SECTION  */
+
+
+    
+     /* END CASOS DE EXITO SECTION  */
   
   }
