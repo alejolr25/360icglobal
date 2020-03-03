@@ -188,18 +188,26 @@ header{
   top: 5px;
 }
 
-.carousel-indicators{
-  border-color: 20px;
-  left: 53%;
-}
-.carousel-indicators li{
-  border-color: black;
+.team-img{
+  width: 450px;
+  height: 380px;
+  background:white;
+  overflow: hidden;
+  border-radius: 5px;;
 }
 
-.carousel-indicators.active{
-  background: #FF1493;
-  border-color: fuchsia;
+ol.carousel-indicators{
+  bottom: 20px;
+  left: 50%;
+  top: 100%;
+}
+ol.carousel-indicators li{
+  border-color: #444;
+}
 
+ol.carousel-indicators li.active{
+  background:fuchsia;
+  border-color:fuchsia;
 }
 
 .list-inline li{
@@ -297,10 +305,38 @@ url();
 
     /* END HEADER SECTION */
 
-    /* CASOS DE EXITO SECTION  */
 
+    /* CASOS DE EXITO SECTION */
 
-    
-     /* END CASOS DE EXITO SECTION  */
-  
+    @media only screen and (min-width: 768px){
+      .carousel-indicators{
+        bottom: -50px;
+        left: 16%;
+      }
+      .team-info p{
+        font-size: 14px;
+      }
+      .team-info{
+        padding: inherit;
+    }
+    .team-img img {
+      margin-bottom: 30px;
+    }
+
+@media only screen and (min-width: 768px) and (max-width:991px){
+
+  .team-info{
+    padding: inherit;
   }
+
+}
+  }
+ 
+ /* END CASOS DE EXITO SECTION  */
+  @supports(object-fit: cover){
+    .team-img img{
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+    }
+}
