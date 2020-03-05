@@ -112,7 +112,6 @@ header{
     text-align: center;
     padding: 40px;
     font-size: 40px;
-    font-famil;
     font-style: 'Light italic';
     font-weight: bolder;
   }
@@ -133,7 +132,6 @@ header{
 
 .about{
   background: var(--fondo);
-
   background-size: cover;
 }
 
@@ -141,11 +139,11 @@ header{
 
 .section-padding{
   padding: 50px 0;
-  background-color: aliceblue;
+  background-color: white;
 }
 
 .section-headind h2{ 
-  font-family: 'Roboto';
+  font-family: "Trendsetter", Sans-serif;
 }
 
 .team-info{
@@ -166,7 +164,7 @@ header{
 .team-info p{
   margin:40px;  
   color: #999;
-  font: Courgette;
+  font: 'Courgette';
   font-size: 18px;
 }
 
