@@ -13,13 +13,59 @@
 }
 
 body {
-    font-family: 'Roboto';
     background: var(--fondo);
   }
 
-img{
-    vertical-align: top;
+h1,
+h2,
+{
+  font-family: 'Source Sans Pro', sans-serif;
 }
+
+.titulo-main {
+  font-size: 3em;
+  text-transform: uppercase;
+}
+
+.main {
+  background: #9CC5EF;
+  overflow: hidden;
+  margin-top: 100vh;
+}
+
+.contenedor,
+.settings {
+  background: #FFFFFF;
+  border-radius: 5px;
+  margin: 1.5em auto;
+  padding: 1em;
+  min-height: 70vh;
+  width: 80%;
+}
+
+.settings {
+  background: #FEFDBD;
+  border: 5px solid #5A5C5D;
+  min-height: 5vh;
+}
+
+.demo {
+  text-align: center;
+}
+
+.vegas_transition,
+.vegas_animation,
+#overlay {
+  margin: 0 auto;
+  height: 60vh;
+  width: 80%;
+}
+
+.big {
+  font-size: 1.5em;
+}
+/* End Slider Section */
+
 
 /* Header */
 
