@@ -4,6 +4,12 @@
     --color3: rgba(11,194,211, 0.623);
     --fondo: #f2f2f2;
     --espacios: 10px;
+    --color-dark: #15181f;
+    --color-dark-x: #2d343f;
+    --color-dark-xx: #1f232b;
+    --color-light: #ffffff;
+    --color-grey: #f5f6f8;
+    
 }
 
 * {
@@ -158,12 +164,13 @@ header{
     text-align: center;
     padding: 40px;
     font-size: 40px;
-    font-style: 'Light italic';
+    /* font-style: 'Light italic'; */
+    font-family: "Trendsetter", Sans-serif;
     font-weight: bolder;
   }
 
   .text-about{
-    text-align: justify, center;
+    text-align: center;
     vertical-align: middle;
     width:100%;
     padding: 20px;   
@@ -176,10 +183,12 @@ header{
     position:relative;
   }
 
-.about{
-  background: var(--fondo);
-  background-size: cover;
+  
+.section-padding-about{
+  padding: 50px 0;
+  background-color: var(--color1);
 }
+
 
 /* CLIENTS SECTION */
 
@@ -237,7 +246,8 @@ header{
   height: 380px;
   background:white;
   overflow: hidden;
-  border-radius: 5px;;
+  border-radius: 5px;
+  z-index: 0;
 }
 
 ol.carousel-indicators{
@@ -265,9 +275,63 @@ ol.carousel-indicators li.active{
   color: #fff;
   padding: 7px 3;
 }
-
 /* END CLIENTS SECTION */
 
+
+/* CONTACT SECTION 1 */
+.contact-area{
+  padding: 50px;
+  background-color: rgba(11,194,211, 0.623);
+}
+/* END CONTACT SECTION1 */
+
+/* CONTACT SECTION 2 */
+.bg-light {
+  background-color: var(--color-light)!important;
+}
+
+.bg-dark {
+  background-color: var(--color-dark)!important;
+}
+
+.p-6 {
+  padding: 4rem 7rem;
+}
+
+.contact-box {
+  padding: 3rem;
+}
+
+.btn {
+  font-weight: 400;
+  padding: 1rem 2rem;
+  border-radius: 5rem;
+  min-width: 10rem;
+}
+
+.btn-outline-dark {
+  border: 2px solid var(--color-dark-xx);
+}
+
+
+.form-control {
+  background-color: var(--color-dark-xx);
+  border: 2px solid var(--color-dark-xx);
+  border-radius: .2rem;
+  padding: 1.5rem 1rem;
+}
+
+.register-bg {
+  background-image: url('../img/celebridad.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.testiomonial {
+  bottom: 10px
+}
+/* END CONTACT SECTION 2 */
   /* FOOTER */
 
   .fa-fa-facebook{
@@ -384,3 +448,24 @@ url();
       object-position: center center;
     }
 }
+/* RESPONSIVE SECTION CONTACT 2 */
+@media (max-width: 575.98px) {
+  .p-6 {
+      padding: 2rem;
+  }
+
+  .contact-box {
+      padding: 0;
+  }
+
+  .width-100 {
+      width: 100%;
+  }
+}
+
+@media (max-width: 1200px) { 
+  .register-bg {
+      min-height: 50vh;
+  }
+}
+/* END RESPONSIVE SECTION CONTACT 2 */
