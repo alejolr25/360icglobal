@@ -28,6 +28,10 @@
   <link rel="stylesheet" href="css/vegas.css">
   <link rel="stylesheet" href="css/monokai-sublime.css">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Ubuntu:400,700" rel="stylesheet">
+
+  <!-- Vue JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <!-- End Vue JavaScript -->
 </head>
 
 
@@ -84,6 +88,29 @@
         </div>
       </section>
     </div>
+
+    
+      <h1 class="title">Que hacemos</h1>
+      
+      <div id="app" class="container">
+        <card
+          data-image="./img/contact1.jpg">
+          <h1 slot="header">Comunicaciones</h1>
+          <p slot="content">TRANSFORMAMOS LA INFORMACIÓN EN NOTICIA PARA DIVULGARLA Y PROMOVERLA.</p>
+        </card>
+        <card
+          data-image="https://images.unsplash.com/photo-1479659929431-4342107adfc1?dpr=2&auto=compress,format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop=">
+          <h1 slot="header">Relaciones Publicas</h1>
+          <p slot="content">GARANTIZAMOS QUE LAS MARCAS O LOS PRODUCTOS SEAN RECONOCIDOS A TRAVES DE RELACIONAMIENTO.</p>
+        </card>
+        <card
+          data-image="https://images.unsplash.com/photo-1479644025832-60dabb8be2a1?dpr=2&auto=compress,format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop=">
+          <h1 slot="header">Mercadeo Estrategico</h1>
+          <p slot="content">DESARROLLAMOS Y CREAMOS EVENTOS Y ACTIVIDADES CON EL FIN DAR A CONOCER LOS DIFERENTES PRODUCTOS
+            Y/O SERVICIOS.</p>
+        </card>
+      </div>
+   
 
     <div id="section-team" class="section-padding">
       <div class="container">
@@ -195,33 +222,6 @@
       </div>
     </div>
 
-    <!-- <section class="contact-area">
-
-
-          <form class="form-group" action="" method="POST">
-            <div class="container">
-              <div class="row allig-items-center">
-
-                <div class="col-4 ">
-                  <input type="text" class="form-control"  placeholder="Digita tu nombre">
-                </div>
-                <div class="col-4">
-                  <input type="email" class="form-control" placeholder="Correo Electronico">
-                </div>
-                <div class="col-4">
-                  <input type="text" class="form-control"  placeholder="Digita tu Telefono">
-                </div>
-                <div class="col-md-6 offset-md-3">
-                  <input type="text" class="form-control"  placeholder="¡Materializa tu proyeco, Cuentanos!">
-                </div>
-              </div>
-              <button type="submit" class="btn btn-primary">Enviar</button>
-            </div>
-            
-          </form>
-
-      </section> -->
-
     <section class="contact-box">
       <div class="row no-gutters bg-dark">
         <div class="col-xl-5 col-lg-12 register-bg">
@@ -266,11 +266,11 @@
         </div>
       </div>
     </section>
+
+    
   </main>
 
   <footer>
-
-
     <div class="parallax">
       <div class="row">
 
@@ -279,7 +279,6 @@
             <img src="img/logoic360.png" alt="">
           </div>
         </div>
-
         <div class="col-sm-4">
           <h4 class="textos-footer">
             DIRECCION: CALLE 121 No. 6-46 OF 256 <br>
@@ -294,9 +293,6 @@
             
           </h4>
         </div>
-
-
-
         <div class="col-sm-4">
           <div class="row align-items-center" style="height:300px;">
             <div class=><a href="#" class="fa fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"></a></div>
@@ -307,7 +303,6 @@
           </div>
 
         </div>
-
       </div>
     </div>
 
@@ -318,7 +313,6 @@
     <!-- Copyright -->
 
   </footer>
-
 
 
   <!-- Slider -->
@@ -367,9 +361,8 @@
       ],
       overlay: true
     });
-
-  </script>
-
+    
+    </script>
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -378,7 +371,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
     integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
     crossorigin="anonymous"></script>
-
+<script src="./js/hover-cards.js"></script>
 
   <script type="text/javascript">
     // Call carousel manually
@@ -410,6 +403,7 @@
   <script src="js/jquery.js"></script>
   <script src="js/main.js"></script>
   <script src="js/filtro.js"></script>
+  <script src="js/hover-cards.js"></script>
 </body>
 
 </html>
