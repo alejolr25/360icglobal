@@ -2,7 +2,7 @@
     --color1: rgb(219,144,.5);
     --color2: #17b453e0;
     --color3: rgba(228, 143, 17, 0.658);
-    --color4: rgba(54, 156, 224, 0.247);
+    --color4: rgb(255, 215, 223);
     --fondo: #f2f2f2;
     --espacios: 10px;
     --color-dark: #15181f;
@@ -111,12 +111,17 @@ header{
   
   .textos>h1{
     font-size:80px;
-    font: 'Montserrat';
+    /* font: 'Montserrat'; */
+    font-family: 'Bellota', cursive;
+    font-weight: 600;
     letter-spacing: 0;
     
   }
   
-  .textos>h2{font-size: 40px; font-weight: 300;}
+  .textos>h2{
+    font-size: 28px;
+    font-weight: 400;
+  }
 
   .textox>h4{
     text-align: center;
@@ -164,21 +169,23 @@ header{
 
   .title-about{
     text-align: center;
-    padding: 40px;
+    
     font-size: 40px;
-    /* font-style: 'Light italic'; */
-    font-family: "Trendsetter", Sans-serif;
-    font-weight: bolder;
-  }
+    font-family: 'Bellota', cursive;
+    font-weight: 1000;
+    padding-top: 0px;   
+
+   }
 
   .text-about{
     text-align: center;
     vertical-align: middle;
     width:100%;
-    padding: 20px;   
+    padding-top:35px;
+    padding-left: 10px;
+    padding-right: 10px;
     font-family: 'Ubuntu'; 
     font-size: 20px;
-    
   }
 
   .btn-section-about{
@@ -187,17 +194,18 @@ header{
 
   
 .section-padding-about{
-  padding: 50px 0;
-  background: var(--color4);
-  
+  padding: 30px 0; 
+  background-color: var(--color4);
 }
 
 
 /* CLIENTS SECTION */
 
 .section-padding{
-  padding: 50px 0;
+  
+  padding-top:40px;  
   background-color: white;
+  padding-bottom: 60px;
 }
 
 .section-headind h2{ 
@@ -251,6 +259,7 @@ header{
   overflow: hidden;
   border-radius: 5px;
   z-index: 0;
+  margin-top: 10px;
 }
 
 ol.carousel-indicators{
@@ -329,7 +338,7 @@ ol.carousel-indicators li.active{
 }
 
 .register-bg {
-  background-image: url('../img/celebridad.png');
+  background-image: url('../img/contact.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
@@ -392,6 +401,8 @@ url();
   .footer-logo img{
     width: 80%;
   }
+
+
 
   @media screen and (max-width: 700px){
 
