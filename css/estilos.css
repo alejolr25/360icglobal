@@ -1,7 +1,8 @@
 :root{
     --color1: rgb(219,144,.5);
-    --color2: rgba(23, 180, 83, 0.877);
-    --color3: rgba(11,194,211, 0.623);
+    --color2: #17b453e0;
+    --color3: rgba(228, 143, 17, 0.658);
+    --color4: rgba(54, 156, 224, 0.247);
     --fondo: #f2f2f2;
     --espacios: 10px;
     --color-dark: #15181f;
@@ -86,7 +87,8 @@ header{
   nav{
     width: 100%;
     position: fixed;
-    box-shadow: 0 0 10px 0 rgba(0,0,0,.5)
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.5);
+    z-index: 10;
   }
   
   .nav1{
@@ -186,7 +188,8 @@ header{
   
 .section-padding-about{
   padding: 50px 0;
-  background-color: var(--color1);
+  background: var(--color4);
+  
 }
 
 
@@ -274,6 +277,10 @@ ol.carousel-indicators li.active{
 .list-inline li a i{
   color: #fff;
   padding: 7px 3;
+}
+
+.img{
+  z-index: 1;
 }
 /* END CLIENTS SECTION */
 
