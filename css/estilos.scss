@@ -560,7 +560,7 @@ url();
       width: 0;
       overflow: hidden;
     }
-
+}
     /* END HEADER SECTION */
 
 
@@ -581,6 +581,7 @@ url();
       margin-bottom: 30px;
     }
 
+    }
 @media only screen and (min-width: 768px) and (max-width:991px){
 
   .team-info{
@@ -588,7 +589,6 @@ url();
   }
 
 }
-  }
 
  /* END CASOS DE EXITO SECTION  */
   @supports(object-fit: cover){
@@ -598,6 +598,7 @@ url();
       object-position: center center;
     }
 }
+
 /* RESPONSIVE SECTION CONTACT 2 */
 @media (max-width: 575.98px) {
   .p-6 {
@@ -612,10 +613,8 @@ url();
       width: 100%;
   }
 }
-
 @media (max-width: 1200px) {
   .register-bg {
       min-height: 50vh;
   }
 }
-/* END RESPONSIVE SECTION CONTACT 2 */
