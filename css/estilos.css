@@ -134,6 +134,10 @@ nav .enlaces a:hover {
   padding: 23.5px 20px; }
 
 /* SECTION ABOUT */
+.section-padding-about {
+  padding: 30px 0;
+  background-color: var(--color4); }
+
 .title-about {
   text-align: center;
   font-size: 40px;
@@ -144,19 +148,39 @@ nav .enlaces a:hover {
 .text-about {
   text-align: center;
   vertical-align: middle;
-  width: 100%;
-  padding-top: 35px;
-  padding-left: 10px;
-  padding-right: 10px;
+  margin-top: 35px;
   font-family: 'Ubuntu';
-  font-size: 20px; }
-
-.btn-section-about {
+  font-size: 20px;
   position: relative; }
 
-.section-padding-about {
-  padding: 30px 0;
-  background-color: var(--color4); }
+/*button section about*/
+.btn-1 {
+  /* Textp */
+  background: #007800;
+  font-weight: 100;
+  /* Caja */ }
+  .btn-1 svg {
+    height: 45px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%; }
+  .btn-1 rect {
+    fill: none;
+    stroke: red;
+    stroke-width: 2;
+    stroke-dasharray: 422, 0;
+    transition: all 0.35s linear; }
+
+.btn-1:hover {
+  background: rgba(255, 0, 255, 0);
+  font-weight: 900;
+  letter-spacing: 1px; }
+  .btn-1:hover rect {
+    stroke-width: 5;
+    stroke-dasharray: 15, 310;
+    stroke-dashoffset: 48;
+    transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1); }
 
 /* WHAT WE DO */
 .title-whatwedo {
@@ -448,6 +472,11 @@ ol.carousel-indicators li.active {
 .footer-logo img {
   width: 80%; }
 
+/* RESPONSIVE 1200 */
+/* SECTION CONTACT*/
+@media (max-width: 1200px) {
+  .register-bg {
+    min-height: 50vh; } }
 @media screen and (max-width: 700px) {
   /* HEADER SECTION */
   .nav2 {
@@ -465,10 +494,10 @@ ol.carousel-indicators li.active {
     height: 100%;
     transition: 1s;
     width: 0;
-    overflow: hidden; } }
-/* END HEADER SECTION */
-/* CASOS DE EXITO SECTION */
-@media only screen and (min-width: 768px) {
+    overflow: hidden; }
+
+  /* END HEADER SECTION */
+  /* CASOS DE EXITO SECTION */
   .carousel-indicators {
     bottom: -50px;
     left: 16%; }
@@ -480,16 +509,18 @@ ol.carousel-indicators li.active {
     padding: inherit; }
 
   .team-img img {
-    margin-bottom: 30px; } }
+    margin-bottom: 30px; }
+
+  /* END CASOS DE EXITO SECTION  */ }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .team-info {
     padding: inherit; } }
-/* END CASOS DE EXITO SECTION  */
 @supports (object-fit: cover) {
   .team-img img {
     height: 100%;
     object-fit: cover;
     object-position: center center; } }
+/* RESPONSIVE 578 PX */
 /* RESPONSIVE SECTION CONTACT 2 */
 @media (max-width: 575.98px) {
   .p-6 {
@@ -500,8 +531,6 @@ ol.carousel-indicators li.active {
 
   .width-100 {
     width: 100%; } }
-@media (max-width: 1200px) {
-  .register-bg {
-    min-height: 50vh; } }
+/*END RESPONSIVE 578 PX*/
 
 /*# sourceMappingURL=estilos.css.map */

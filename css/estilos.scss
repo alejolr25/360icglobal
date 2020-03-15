@@ -161,6 +161,11 @@ header{
 
   /* SECTION ABOUT */
 
+.section-padding-about{
+  padding: 30px 0;
+  background-color: var(--color4);
+}
+
   .title-about{
     text-align: center;
     font-size: 40px;
@@ -172,23 +177,59 @@ header{
   .text-about{
     text-align: center;
     vertical-align: middle;
-    width:100%;
-    padding-top:35px;
-    padding-left: 10px;
-    padding-right: 10px;
+    margin-top:35px;
     font-family: 'Ubuntu';
     font-size: 20px;
-  }
-
-  .btn-section-about{
-    position:relative;
+    position: relative;
   }
 
 
-.section-padding-about{
-  padding: 30px 0;
-  background-color: var(--color4);
+/*button section about*/
+
+
+.btn-1 {
+  
+  /* Textp */
+  background: darken(green, 1.5%);
+  font-weight: 100;
+  
+  
+  /* Caja */
+  svg {
+    
+    height: 45px;
+    left: 0;
+    position: absolute;
+    top: 0; 
+    width: 100%;  
+  }
+  
+  rect {
+    fill: none;
+    stroke:red;
+    stroke-width: 2;
+    stroke-dasharray: 422, 0;
+    transition: all 0.35s linear;
+    
+  }
 }
+
+.btn-1:hover {
+  background: rgba(fuchsia, 0);
+  font-weight: 900;
+  letter-spacing: 1px;
+  
+  
+  rect {
+    stroke-width: 5;
+    stroke-dasharray: 15, 310;
+    stroke-dashoffset: 48;
+    transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+    
+  }
+}
+
+
 
 /* WHAT WE DO */
 
@@ -214,7 +255,7 @@ h1 + p, p + p {
   display: flex;
   flex-wrap: wrap;
   -webkit-box-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .card-wrap {
@@ -534,13 +575,24 @@ url();
     width: 80%;
   }
 
+/* RESPONSIVE 1200 */
 
+/* SECTION CONTACT*/
+@media (max-width: 1200px) {
+  .register-bg {
+      min-height: 50vh;
+  }
+  
+  }
+// END SECTION CONTACT
+
+
+  // RESPONSIVE 700 PX
 
   @media screen and (max-width: 700px){
 
 
     /* HEADER SECTION */
-
     .nav2{
       color: #fff;
     }
@@ -560,28 +612,27 @@ url();
       width: 0;
       overflow: hidden;
     }
-}
     /* END HEADER SECTION */
-
-
     /* CASOS DE EXITO SECTION */
+    .carousel-indicators{
+      bottom: -50px;
+      left: 16%;
+    }
+    .team-info p{
+      font-size: 14px;
+    }
+    .team-info{
+      padding: inherit;
+  }
+  .team-img img {
+    margin-bottom: 30px;
+  }
+  /* END CASOS DE EXITO SECTION  */
 
-    @media only screen and (min-width: 768px){
-      .carousel-indicators{
-        bottom: -50px;
-        left: 16%;
-      }
-      .team-info p{
-        font-size: 14px;
-      }
-      .team-info{
-        padding: inherit;
-    }
-    .team-img img {
-      margin-bottom: 30px;
-    }
+  // END RESPONSIVE 700 PX
 
-    }
+}
+
 @media only screen and (min-width: 768px) and (max-width:991px){
 
   .team-info{
@@ -590,7 +641,6 @@ url();
 
 }
 
- /* END CASOS DE EXITO SECTION  */
   @supports(object-fit: cover){
     .team-img img{
       height: 100%;
@@ -599,7 +649,10 @@ url();
     }
 }
 
+
+/* RESPONSIVE 578 PX */
 /* RESPONSIVE SECTION CONTACT 2 */
+
 @media (max-width: 575.98px) {
   .p-6 {
       padding: 2rem;
@@ -613,8 +666,6 @@ url();
       width: 100%;
   }
 }
-@media (max-width: 1200px) {
-  .register-bg {
-      min-height: 50vh;
-  }
-}
+
+
+/*END RESPONSIVE 578 PX*/
