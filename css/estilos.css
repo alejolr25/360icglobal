@@ -1,69 +1,28 @@
 :root {
-  --color1: rgb(219,144,.5);
-  --color2: #17b453e0;
-  --color3: rgba(228, 143, 17, 0.658);
-  --color4: rgb(255, 215, 223);
+  --color1: rgb(255, 215, 223);
   --fondo: #f2f2f2;
+  --titulos: 33px;
+  --margenes: 60px;
   --espacios: 10px;
-  --color-dark: #15181f;
-  --color-dark-x: #2d343f;
-  --color-dark-xx: #1f232b;
-  --color-light: #ffffff;
-  --color-grey: #f5f6f8; }
+  --espacios-contenido:45px; }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
-.body {
+body {
+  font-family: 'open sans';
   background: var(--fondo);
-  -webkit-font-smoothing: antialiased; }
+  z-index: 3; }
 
-.titulo-main {
-  font-size: 3em;
-  text-transform: uppercase; }
+img {
+  vertical-align: top; }
 
-.main {
-  background: #9CC5EF;
-  overflow: hidden;
-  margin-top: 100vh; }
-
-.contenedor,
-.settings {
-  background: #FFFFFF;
-  border-radius: 5px;
-  margin: 1.5em auto;
-  padding: 1em;
-  min-height: 70vh;
-  width: 80%; }
-
-.settings {
-  background: #FEFDBD;
-  border: 5px solid #5A5C5D;
-  min-height: 5vh; }
-
-.demo {
-  text-align: center; }
-
-.vegas_transition,
-.vegas_animation,
-#overlay {
-  margin: 0 auto;
-  height: 60vh;
-  width: 80%; }
-
-.big {
-  font-size: 1.5em; }
-
-/* End Slider Section */
 /* Header */
 header {
   width: 100%;
-  height: 600px;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover; }
+  height: 600px; }
 
 nav {
   width: 100%;
@@ -74,31 +33,14 @@ nav {
 .nav1 {
   background: transparent;
   height: 80px;
-  color: #fff; }
+  color: #fff;
+  z-index: 10; }
 
-.textos {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  color: white;
-  overflow: hidden;
-  text-align: center; }
-
-.textos > h1 {
-  font-size: 80px;
-  font-family: 'Bellota', cursive;
-  font-weight: 600;
-  letter-spacing: 0; }
-
-.textos > h2 {
-  font-size: 28px;
-  font-weight: 400; }
-
-.textox > h4 {
-  text-align: center; }
+.nav2 {
+  background: var(--fondo);
+  height: 100px;
+  color: #000;
+  z-index: 10; }
 
 .contenedor-nav {
   display: flex;
@@ -125,18 +67,35 @@ nav .enlaces a:hover {
   transition: 0.6s; }
 
 .logo, .logo img {
-  height: 80px;
-  text-align: center; }
+  height: 80px; }
 
 .icono {
   display: none;
   font-size: 24px;
   padding: 23.5px 20px; }
 
-/* SECTION ABOUT */
+.textos {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  overflow: hidden;
+  text-align: center; }
+
+.textos > h1 {
+  font-size: 80px; }
+
+.textos > h2 {
+  font-size: 30px;
+  font-weight: 300; }
+
+/*Section About*/
 .section-padding-about {
   padding: 30px 0;
-  background-color: var(--color4); }
+  background-color: var(--color1); }
 
 .title-about {
   text-align: center;
@@ -384,8 +343,8 @@ ol.carousel-indicators li.active {
   color: #fff;
   padding: 7px 3; }
 
-.img {
-  z-index: 1; }
+img {
+  vertical-align: top; }
 
 /* END CLIENTS SECTION */
 /* CONTACT SECTION 1 */
@@ -472,13 +431,7 @@ ol.carousel-indicators li.active {
 .footer-logo img {
   width: 80%; }
 
-/* RESPONSIVE 1200 */
-/* SECTION CONTACT*/
-@media (max-width: 1200px) {
-  .register-bg {
-    min-height: 50vh; } }
 @media screen and (max-width: 700px) {
-  /* HEADER SECTION */
   .nav2 {
     color: #fff; }
 
@@ -489,48 +442,59 @@ ol.carousel-indicators li.active {
   .enlaces {
     position: fixed;
     top: 80px;
-    background: #2c3e50;
+    background: #448fdb;
     left: 0;
     height: 100%;
     transition: 1s;
-    width: 0;
+    width: 0%;
     overflow: hidden; }
 
-  /* END HEADER SECTION */
-  /* CASOS DE EXITO SECTION */
-  .carousel-indicators {
-    bottom: -50px;
-    left: 16%; }
+  .enlaces a {
+    display: block;
+    width: 100%;
+    height: 50px;
+    padding: 20px;
+    text-align: center;
+    background: #1c65ad;
+    color: #fff; }
 
-  .team-info p {
-    font-size: 14px; }
+  .textos > h1 {
+    font-size: 70px; }
 
-  .team-info {
-    padding: inherit; }
+  .textos > h2 {
+    font-size: 35px; }
 
-  .team-img img {
-    margin-bottom: 30px; }
+  .content-card {
+    width: 48%;
+    margin-bottom: var(--margenes); }
 
-  /* END CASOS DE EXITO SECTION  */ }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .team-info {
-    padding: inherit; } }
-@supports (object-fit: cover) {
-  .team-img img {
-    height: 100%;
-    object-fit: cover;
-    object-position: center center; } }
-/* RESPONSIVE 578 PX */
-/* RESPONSIVE SECTION CONTACT 2 */
-@media (max-width: 575.98px) {
-  .p-6 {
-    padding: 2rem; }
+  :root {
+    --margenes: 30px; } }
+@media screen and (max-width: 500px) {
+  :root {
+    --espacios-contenido: 25px; }
 
-  .contact-box {
-    padding: 0; }
+  .icono {
+    display: block;
+    cursor: pointer; }
 
-  .width-100 {
-    width: 100%; } }
-/*END RESPONSIVE 578 PX*/
+  .textos > h1 {
+    font-size: 40px; }
+
+  .content-card {
+    width: 90%; }
+
+  .caja-servicios {
+    width: 90%;
+    margin-bottom: var(--margenes); }
+
+  .cont-work {
+    width: 85%; }
+
+  .marca-logo {
+    width: 80%; }
+
+  .iconos {
+    margin: auto; } }
 
 /*# sourceMappingURL=estilos.css.map */
