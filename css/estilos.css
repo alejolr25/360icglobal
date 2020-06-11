@@ -347,6 +347,44 @@ img {
   vertical-align: top; }
 
 /* END CLIENTS SECTION */
+
+/* SECTION INSTAGRAM */
+  .social{
+    background-image: url(../img/ig.jpg);
+    background-position: center;
+    position: relative;
+    background-size: cover;
+  }
+
+  .social:before {
+    content:'';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+
+  .text-instagram{
+    align-items: center;
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-left: 30px;
+  }
+
+  .title-social{
+    padding: 20px;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Bellota', cursive;
+    font-weight: 1000;
+    color: rgba(0, 0, 0, 0.66);
+    
+  }
+
+/* END SECTION INSTAGRAM */
+
 /* CONTACT SECTION 1 */
 .contact-area {
   padding: 50px;
